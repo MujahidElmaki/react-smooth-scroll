@@ -1,5 +1,5 @@
-import React from "react";
-import { FaBars } from "react-icons/fa"; // THESE ARE ICONS FROM REACT SO U DONT IMPORT
+import React from 'react';
+import { FaBars } from 'react-icons/fa'; // THESE ARE ICONS FROM REACT SO U DONT IMPORT
 import {
   Nav,
   NavbarContainer,
@@ -10,7 +10,7 @@ import {
   NavLinks,
   Navbtn,
   NavBtnLink,
-} from "./NavbarElements";
+} from './NavbarElements';
 function Navbar() {
   return (
     <>
