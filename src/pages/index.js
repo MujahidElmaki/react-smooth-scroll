@@ -7,8 +7,9 @@ import {
   homeObjOne,
   homeObjThree,
   homeObjTwo,
-  homeObjFour,
 } from '../components/Roadmap/Data';
+import Utility from '../components/Utility';
+import Footer from '../components/Footer';
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +25,9 @@ function Home() {
       <HeroSection />
       <Roadmap {...homeObjOne} />
       <Roadmap {...homeObjTwo} />
+      <Utility />
       <Roadmap {...homeObjThree} />
-      <Roadmap {...homeObjFour} />
+      <Footer />
     </>
   );
 }

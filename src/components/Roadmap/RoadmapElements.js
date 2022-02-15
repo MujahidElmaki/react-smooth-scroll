@@ -12,7 +12,7 @@ export const RoadmapContainer = styled.div`
 export const RoadmapWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;

@@ -18,17 +18,17 @@ function Sidebar({ isOpen, toggle }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="mintNFT" onClick={toggle}>
-            Mint An NFT
-          </SidebarLink>
-          <SidebarLink to="roadmap" onClick={toggle}>
+          <SidebarLink to="Roadmap" onClick={toggle}>
             Roadmap
           </SidebarLink>
           <SidebarLink to="team" onClick={toggle}>
             Team
           </SidebarLink>
           <SidebarLink to="utility" onClick={toggle}>
-            Utility
+            Utilities
+          </SidebarLink>
+          <SidebarLink to="gallery" onClick={toggle}>
+            Start Minting
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
