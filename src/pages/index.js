@@ -7,7 +7,9 @@ import {
   homeObjOne,
   homeObjThree,
   homeObjTwo,
+  homeObjFour,
 } from '../components/Roadmap/Data';
+
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,6 +25,7 @@ function Home() {
       <Roadmap {...homeObjOne} />
       <Roadmap {...homeObjTwo} />
       <Roadmap {...homeObjThree} />
+      <Roadmap {...homeObjFour} />
     </>
   );
 }

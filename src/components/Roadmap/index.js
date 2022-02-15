@@ -14,6 +14,7 @@ import {
   ImgWrap,
   Img,
 } from './RoadmapElements';
+
 function Roadmap({
   lightBg,
   id,
@@ -59,7 +60,7 @@ function Roadmap({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src="svg-1.svg" alt={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </RoadmapRow>
