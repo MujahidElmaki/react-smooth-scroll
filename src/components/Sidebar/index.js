@@ -10,18 +10,26 @@ import {
   SidebarRoute,
 } from './SidebarElements';
 
-function Sidebar() {
+function Sidebar({ isOpen, toggle }) {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="mintNFT">Mint An NFT</SidebarLink>
-          <SidebarLink to="roadmap">Roadmap</SidebarLink>
-          <SidebarLink to="team">Team</SidebarLink>
-          <SidebarLink to="utility">Utility</SidebarLink>
+          <SidebarLink to="mintNFT" onClick={toggle}>
+            Mint An NFT
+          </SidebarLink>
+          <SidebarLink to="roadmap" onClick={toggle}>
+            Roadmap
+          </SidebarLink>
+          <SidebarLink to="team" onClick={toggle}>
+            Team
+          </SidebarLink>
+          <SidebarLink to="utility" onClick={toggle}>
+            Utility
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to="/connectwallet"> </SidebarRoute>

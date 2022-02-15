@@ -11,13 +11,14 @@ import {
   Navbtn,
   NavBtnLink,
 } from './NavbarElements';
-function Navbar() {
+
+function Navbar({ toggle }) {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Meta Fruits</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
